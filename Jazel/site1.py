@@ -8,3 +8,6 @@ rawPage = urllib2.urlopen(request)
 read = rawPage.read()
 #print read
 tree = etree.HTML(read)
+
+title = tree.xpath("//div[@class='middleModelAndDescTop']/text()")
+print 'Title=',title

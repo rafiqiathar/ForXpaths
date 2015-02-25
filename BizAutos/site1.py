@@ -2,7 +2,8 @@
 from lxml import etree
 from lxml.html import fromstring, tostring
 import urllib2
-url = 'http://www.lrlv.com/detail-2013-land_rover-lr2-awd_4dr-used-10523272.html'
+url = 'http://www.hudsontoyota.com/detail-2012-toyota-yaris-base-used-12785408.html'
+#url = 'http://www.lrlv.com/detail-2013-land_rover-lr2-awd_4dr-used-10523272.html'
 request = urllib2.Request(url)
 rawPage = urllib2.urlopen(request)
 read = rawPage.read()
